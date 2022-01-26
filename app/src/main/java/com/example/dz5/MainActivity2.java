@@ -2,9 +2,7 @@ package com.example.dz5;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.os.Bundle;
-
 import java.util.ArrayList;
 
 public class MainActivity2 extends AppCompatActivity {
@@ -16,6 +14,7 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
         arrayList = new ArrayList<>();
         int id = getIntent().getIntExtra("key", 1);
         if (id == 1) {
@@ -53,9 +52,7 @@ public class MainActivity2 extends AppCompatActivity {
             arrayList.add(new Model(R.drawable.ic_jo_3x, "Вануату"));
             arrayList.add(new Model(R.drawable.ic_ie_3x, "Ерландия"));
             arrayList.add(new Model(R.drawable.ic_ni_3x, "Науру"));
-
         }
-
         RecyclerView recyclerView = findViewById(R.id.recyclerView2);
         adapter = new Adapter();
         adapter.setArrayList(arrayList);

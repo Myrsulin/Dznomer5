@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+
     private Adapter adapter;
     private ArrayList<Model> arrayList;
 
@@ -36,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
         adapter.setArrayList(arrayList);
         recyclerView.setAdapter(adapter);
 
-
     }
 
     private void createFlags() {
@@ -47,5 +47,4 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add(new Model(R.drawable.ic_launcher_background, "South America", 4));
         arrayList.add(new Model(R.drawable.ic_launcher_background, "Australia", 5));
     }
-
 }
